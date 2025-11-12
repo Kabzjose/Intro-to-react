@@ -1,0 +1,26 @@
+.card{
+    border: ipx solid hsl(0, 9%, 89%);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    max-width: 250px;
+    box-shadow: 5px 5px 15px #3a21211a;
+
+}
+.card .image-card{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: flex;
+}
+.card .card-title{
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    
+}
+.text{
+    font-family: 'Courier New', Courier, monospace;
+}
