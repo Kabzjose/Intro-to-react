@@ -7,9 +7,11 @@ function App(){
   return (
     <><>
     <Header/>
-    <Student name="jose" message="Loving react so far"/>
-    <Student name="Kabz" message="props make components dyamic"/>
-    <Student name="StudeneDev" message="reusin componets is powerful"/>
+    <Student name="John"age="19" bio="A passionate sodtware engineer and a data annotator"/>
+    <Student name="Sharon"age="21" bio="a pasiionate jounalist"/>
+   <Student name="Dan"age="23" bio="A passionate drummer"/>
+   
+   
   <Footer/>
   </></>
   )

@@ -1,9 +1,10 @@
-function Student({name,message}){
+function Student({name,age,bio}){
     
     return(
        <div>
-        <h2>{name}</h2>
-        <p>{message}</p>
+        <h2>Name:{name}</h2>
+        <p>Age: {age}</p>
+        <p>Proffession: {bio}</p>
        </div>
     )
 }
