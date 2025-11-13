@@ -1,13 +1,13 @@
 
 import Header from "./Header";
 import Footer from "./footer";
-import LikeButton from "./student";
-import Counter from "./student";
+import StudentTracker from "./student";
+
 function App(){
   return (
     <><>
     <Header/>
-    <LikeButton/>
+    <StudentTracker/>
    
    
   <Footer/>

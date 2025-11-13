@@ -1,5 +1,5 @@
 import  { useState } from "react";
-function LikeButton({}){
+function StudentTracker({}){
     const [count,setCount]=useState(0);
     //count=current value
     //setCount= function to update the count value
@@ -10,11 +10,11 @@ function LikeButton({}){
             marginTop:"20px",
             fontFamily:"Arial, sans-serif",
         }}>
-      <h2>❤️ LIKE</h2>
+      <h2>Students Present and Absent</h2>
       <button
         onClick={()=>setCount(count+1)}
         style={{
-          backgroundColor: "#ff4d6d",
+          backgroundColor: "#224591ff",
           border: "none",
           color: "white",
           padding: "12px 24px",
@@ -23,17 +23,33 @@ function LikeButton({}){
           cursor: "pointer",
           boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
           transition: "transform 0.2s, background-color 0.3s",
-        }}onMouseOver={(e) => (e.target.style.backgroundColor = "#e63946")}
-        onMouseOut={(e) => (e.target.style.backgroundColor = "#ff4d6d")}
+        }}
 
         >
-           ❤️ Likes  
+           Present 
+      </button>
+       <button
+        onClick={()=>setCount(count-1)}
+        style={{
+          backgroundColor: "#b3364dff",
+          border: "none",
+          color: "white",
+          padding: "12px 24px",
+          fontSize: "18px",
+          borderRadius: "12px",
+          cursor: "pointer",
+          boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
+          transition: "transform 0.2s, background-color 0.3s",
+        }}
+
+        >
+        Absent 
       </button>
       <h3 style={{ marginTop: "20px", fontSize: "22px" }}>
-        Likes: {count}
+        Students: {count}
       </h3>
         
        </div>
     )
 }
-export default LikeButton;
+export default StudentTracker;
