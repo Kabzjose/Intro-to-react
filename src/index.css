@@ -1,26 +1,37 @@
-.card{
-    border: ipx solid hsl(0, 9%, 89%);
-    border-radius: 10px;
-    padding: 30px;
-    margin: 10px;
-    text-align: center;
-    display: inline-block;
-    max-width: 250px;
-    box-shadow: 5px 5px 15px #3a21211a;
+/* Button hover animation */
+.theme-button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  transition: transform 0.2s, background-color 0.2s;
+}
 
+.theme-button:hover {
+  transform: scale(1.05);
+  background-color: #45a049;
 }
-.card .image-card{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    display: flex;
+
+/* TeamMemberCard hover animation */
+.team-card {
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  background-color: white;
 }
-.card .card-title{
-    font-size: 1.5rem;
-    margin-bottom: 0px;
-    
+
+.team-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-.text{
-    font-family: 'Courier New', Courier, monospace;
+
+/* Dark mode for cards */
+.team-card.dark {
+  background-color: #532323;
+  color: #6e0f0f;
 }

@@ -1,15 +1,8 @@
-function TeamMemberCard({ name, role, image }) {
+function TeamMemberCard({ name, role, image,darkMode }) {
   return (
     <div
-      style={{
-        width: "260px",
-        padding: "20px",
-        borderRadius: "15px",
-        boxShadow: "0 4px 10px rgba(0,0,0,0.15)",
-        textAlign: "center",
-        fontFamily: "Arial, sans-serif",
-        background: "white",
-      }}
+     
+      className="team-card"
     >
       <img
         src={image}
