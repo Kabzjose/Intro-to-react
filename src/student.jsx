@@ -23,8 +23,11 @@ function LikeButton({}){
           cursor: "pointer",
           boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
           transition: "transform 0.2s, background-color 0.3s",
-        }}>
-           ❤️ Like  
+        }}onMouseOver={(e) => (e.target.style.backgroundColor = "#e63946")}
+        onMouseOut={(e) => (e.target.style.backgroundColor = "#ff4d6d")}
+
+        >
+           ❤️ Likes  
       </button>
       <h3 style={{ marginTop: "20px", fontSize: "22px" }}>
         Likes: {count}
